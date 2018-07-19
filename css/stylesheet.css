@@ -1,0 +1,105 @@
+:root {
+/*	  orange*/
+    --Transition-color: #ff6600;
+/*    blue*/
+    --Transition-color-alt: #000099;
+/*    white*/
+    --Text-color: #ffffff;
+/*    black*/
+    --Third-Transition-color: #000000;
+}
+
+.Container {
+    display: grid;
+    background: linear-gradient(to bottom right, var(--Transition-color-alt), var(--Third-Transition-color), var(--Transition-color));
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 20px 40px 500px 20px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.MainContent {
+	display: grid;
+	align-items: flex-end;
+	justify-content: space-around;
+	grid-column-gap: 5px;
+	grid-column: 2;
+	grid-row: 3;
+	background: linear-gradient(to top left, var(--Transition-color-alt), var(--Third-Transition-color), var(--Transition-color));
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 10px auto;
+	flex-direction: row;
+}
+
+.BarChart1 {
+	background: linear-gradient(to bottom right, var(--Transition-color-alt), var(--Third-Transition-color));
+	font-size: 22pt;
+	text-align: center;
+	grid-row: 2;
+	color: var(--Text-color);
+}
+
+.BarChart2 {
+	background: linear-gradient(to bottom right, var(--Transition-color), var(--Third-Transition-color));
+	font-size: 22pt;
+	text-align: center;
+	grid-row: 2;
+	color: var(--Text-color);
+}
+
+.BarChart3 {	
+	background: linear-gradient(to bottom right, var(--Transition-color-alt), var(--Third-Transition-color));
+	font-size: 22pt;
+	text-align: center;
+	grid-row: 2;
+	color: var(--Text-color);
+}
+
+.BarChart4 {	
+	background: linear-gradient(to bottom right, var(--Transition-color), var(--Third-Transition-color));
+	font-size: 22pt;
+	text-align: center;	
+	grid-row: 2;
+	color: var(--Text-color);
+}
+
+.BarChart5 {
+	background: linear-gradient(to bottom right, var(--Transition-color-alt), var(--Third-Transition-color));
+	font-size: 22pt;
+	text-align: center;
+	grid-row: 2;
+	color: var(--Text-color);
+}
+
+.BarChart6 {
+	background: linear-gradient(to bottom right, var(--Transition-color), var(--Third-Transition-color));
+	font-size: 22pt;
+	text-align: center;
+	grid-row: 2;
+	color: var(--Text-color);
+}
+
+.BarChart1:hover, .BarChart2:hover, .BarChart3:hover, .BarChart4:hover, .BarChart5:hover, .BarChart6:hover {
+	background: var(--Third-Transition-color);
+	transition: 1.5s;
+    transform: translate3d(0, 0, 0);
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 20px, 0); }
+  to   { transform: translate3d(0, 0, 0); }
+}
+
+.NavBar {
+	display: grid;
+	grid-column: 2;
+	grid-row: 2;
+	font-size: 18pt;
+	justify-content: center;
+	align-items: center;
+	border: 10px;
+	background: linear-gradient(to top left, var(--Transition-color-alt), var(--Third-Transition-color));
+	color: var(--Text-color);
+}
